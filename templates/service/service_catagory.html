@@ -1,0 +1,20 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+  <div class="container">
+    <h1> Service catagory </h1>
+    <hr>
+
+    {% for catagory in form %}
+
+        <p><a href="{% url 'catagorywise_service' catagory.catagory_name %}">{{ catagory.catagory_name }}</a></p>
+
+    {% endfor %}
+
+  </div>
+</body>
+</html>
