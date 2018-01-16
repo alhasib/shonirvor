@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'services',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -119,9 +119,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,"static")
-]
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
+TWILIO_ACCOUNT_SID='AC02ddff5dc5e2da448b00b04fe5ad6ce5'
+TWILIO_AUTH_TOKEN='a85adb206be66bde54ed32d732ca6ecb'
+TWILIO_FROM_NUMBER='+17344371188'

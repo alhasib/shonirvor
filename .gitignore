@@ -1,4 +1,8 @@
-# Byte-compiled / optimized / DLL files
+<<<<<<< HEAD
+# Byte-compiled / optimized / DLL files ;
+=======
+# Byte-compiled / optimized / DLL files;
+>>>>>>> master
 __pycache__/
 *.py[cod]
 *$py.class
