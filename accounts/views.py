@@ -22,7 +22,7 @@ def VerifiedPhone(request):
                 raise Exception("not vaild")
             else:
                 raise e
-    return render(request, 'phone.html',{'form':VerifiedPhoneForm()})
+    return render(request, 'accounts/phone.html',{'form':VerifiedPhoneForm()})
 
 def send_code(request,phone_number):
     print(phone_number)
