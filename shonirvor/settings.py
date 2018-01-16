@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accounts',
+    'services',
 ]
 
 MIDDLEWARE = [
@@ -123,3 +124,9 @@ STATIC_URL = '/static/'
 TWILIO_ACCOUNT_SID='AC02ddff5dc5e2da448b00b04fe5ad6ce5'
 TWILIO_AUTH_TOKEN='a85adb206be66bde54ed32d732ca6ecb'
 TWILIO_FROM_NUMBER='+17344371188'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,"static")
+]
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
