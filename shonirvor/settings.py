@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -118,3 +119,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+TWILIO_ACCOUNT_SID='AC02ddff5dc5e2da448b00b04fe5ad6ce5'
+TWILIO_AUTH_TOKEN='a85adb206be66bde54ed32d732ca6ecb'
+TWILIO_FROM_NUMBER='+17344371188'
