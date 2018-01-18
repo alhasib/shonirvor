@@ -1,0 +1,16 @@
+<html>
+<head>
+</head>
+<body>
+    {% if profile.profile_image %}
+        <img src="{{ profile.profile_image.url }}" width="240" alt="profile_pic"> 
+    {% endif %}
+    <p>{{ profile.full_name}}</p>
+    <p>{{ profile.area}}</p>
+    <p>{{ profile.adress}}</p>
+    <p>{{ profile.email}}</p>
+    <p>{{ profile.facebook_link}}</p>
+    <p>{{ profile.linkedin_link}}</p>
+    <p>{{ profile.phone_number}}</p>
+</body>
+</html>
