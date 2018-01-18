@@ -1,0 +1,9 @@
+
+{% if profile.profile_image %}
+    <img src="{{ profile.profile_image.url }}" width="240" alt="profile_pic">
+{% endif %}
+<form class="" action="edit" method="POST">
+    {% csrf_token %}
+{{ form.as_p }}
+<button type = 'submit'>Save</button>
+</form>
